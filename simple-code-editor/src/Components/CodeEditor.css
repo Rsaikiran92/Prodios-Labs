@@ -1,0 +1,39 @@
+.code-editor-container {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f1f0f0;
+    width: 500px;
+    margin: auto;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .code-editor-textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    background: transparent;
+    caret-color: black; /* Cursor color */
+    z-index: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 10px;
+  }
+  
+  .code-editor-pre {
+    margin: 0;
+    padding: 10px;
+    pointer-events: none; /* Prevent highlighting */
+    user-select: none;   /* Prevent text selection */
+    overflow: auto;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
